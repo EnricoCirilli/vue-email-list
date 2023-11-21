@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- vue js cdn -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
+    <title>vue-email-list</title>
+  </head>
+  <body>
+    <div id="app">
+        <ol v-if="emails.length === 10">
+            <li v-for="email in emails">{{email}}</li>
+        </ol>
+        <div v-else>
+            Non sono ancora state generate
+        </div>
+
+
+    <!-- Custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
